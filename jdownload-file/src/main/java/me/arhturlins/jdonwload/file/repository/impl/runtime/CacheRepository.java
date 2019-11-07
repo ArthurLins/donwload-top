@@ -1,7 +1,6 @@
-package me.arhturlins.jdonwload.cahce.repository.impl.runtime;
+package me.arhturlins.jdonwload.file.repository.impl.runtime;
 
-import me.arhturlins.jdonwload.cahce.repository.api.ICacheRepository;
-
+import me.arhturlins.jdonwload.file.repository.api.ICacheRepository;
 
 import java.io.File;
 import java.util.concurrent.ConcurrentHashMap;

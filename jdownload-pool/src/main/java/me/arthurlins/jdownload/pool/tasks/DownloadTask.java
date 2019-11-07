@@ -3,12 +3,10 @@ package me.arthurlins.jdownload.pool.tasks;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.ResponseBody;
-import me.arhturlins.jdonwload.cahce.service.CacheService;
 import me.arthurlins.jdownload.pool.HttpThreadPool;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URI;
 import java.nio.file.Path;
 

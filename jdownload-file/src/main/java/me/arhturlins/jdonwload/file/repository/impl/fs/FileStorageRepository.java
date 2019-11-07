@@ -1,6 +1,6 @@
-package me.arhturlins.jdonwload.cahce.repository.impl.fs;
+package me.arhturlins.jdonwload.file.repository.impl.fs;
 
-import me.arhturlins.jdonwload.cahce.repository.api.IFileStorageRepository;
+import me.arhturlins.jdonwload.file.repository.api.IFileStorageRepository;
 
 import java.io.File;
 import java.io.FileOutputStream;

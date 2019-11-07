@@ -1,7 +1,7 @@
-package me.arhturlins.jdonwload.cahce.repository.factory;
+package me.arhturlins.jdonwload.file.repository.factory;
 
-import me.arhturlins.jdonwload.cahce.repository.api.ICacheRepository;
-import me.arhturlins.jdonwload.cahce.repository.impl.runtime.CacheRepository;
+import me.arhturlins.jdonwload.file.repository.api.ICacheRepository;
+import me.arhturlins.jdonwload.file.repository.impl.runtime.CacheRepository;
 
 public class CacheRepositoryFactory {
 

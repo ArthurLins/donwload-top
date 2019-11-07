@@ -1,7 +1,6 @@
 package me.arthurlins.jdownload.pool;
 
-import me.arhturlins.jdonwload.cahce.FileFacade;
-import me.arhturlins.jdonwload.cahce.service.CacheService;
+import me.arhturlins.jdonwload.file.FileFacade;
 import me.arthurlins.jdownload.pool.tasks.DownloadTask;
 
 import java.io.File;

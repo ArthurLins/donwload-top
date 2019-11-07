@@ -1,8 +1,8 @@
-package me.arhturlins.jdonwload.cahce.service;
+package me.arhturlins.jdonwload.file.service;
 
-import me.arhturlins.jdonwload.cahce.repository.api.ICacheRepository;
-import me.arhturlins.jdonwload.cahce.repository.factory.CacheRepositoryFactory;
-import me.arhturlins.jdonwload.cahce.service.api.ICacheService;
+import me.arhturlins.jdonwload.file.repository.api.ICacheRepository;
+import me.arhturlins.jdonwload.file.repository.factory.CacheRepositoryFactory;
+import me.arhturlins.jdonwload.file.service.api.ICacheService;
 
 import java.io.File;
 import java.net.URI;

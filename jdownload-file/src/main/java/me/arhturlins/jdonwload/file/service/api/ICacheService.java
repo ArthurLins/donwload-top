@@ -1,4 +1,4 @@
-package me.arhturlins.jdonwload.cahce.service.api;
+package me.arhturlins.jdonwload.file.service.api;
 
 import java.io.File;
 import java.net.URI;

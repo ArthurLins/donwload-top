@@ -1,8 +1,8 @@
-package me.arhturlins.jdonwload.cahce.service;
+package me.arhturlins.jdonwload.file.service;
 
-import me.arhturlins.jdonwload.cahce.repository.api.IFileStorageRepository;
-import me.arhturlins.jdonwload.cahce.repository.factory.FileStorageRepositoryFactory;
-import me.arhturlins.jdonwload.cahce.service.api.IFileStorageService;
+import me.arhturlins.jdonwload.file.repository.api.IFileStorageRepository;
+import me.arhturlins.jdonwload.file.repository.factory.FileStorageRepositoryFactory;
+import me.arhturlins.jdonwload.file.service.api.IFileStorageService;
 
 import java.io.File;
 import java.nio.file.Path;
