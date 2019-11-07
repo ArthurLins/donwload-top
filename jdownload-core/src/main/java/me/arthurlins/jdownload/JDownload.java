@@ -1,7 +1,7 @@
 package me.arthurlins.jdownload;
 
 
-import me.arthurlins.jdownload.pool.HttpThreadPool;
+import me.arthurlins.jdownload.pool.DownloadThreadPool;
 
 import java.io.File;
 import java.net.URI;
@@ -12,10 +12,10 @@ import java.util.function.Consumer;
 
 public class JDownload {
 
-    private HttpThreadPool pool;
+    private DownloadThreadPool pool;
 
     public JDownload(){
-        this.pool = new HttpThreadPool();
+        this.pool = new DownloadThreadPool();
     }
 
     public void download(String uri, String dir, Consumer<File> onFinished) throws URISyntaxException {
@@ -28,17 +28,8 @@ public class JDownload {
         pool.submitDownload(uri,dir,onFinished);
     }
 
-    public static void main(String[] args) {
-        JDownload jd = new JDownload();
-
-        for (int i =0; i < 10000; i++) {
-            try {
-                jd.download("http://212.183.159.230/5MB.zip", "", (file -> {
-                    System.out.println("recebido!");
-                }));
-            } catch (URISyntaxException e) {
-                e.printStackTrace();
-            }
-        }
+    public void stop() {
+        pool.stop();
     }
+
 }

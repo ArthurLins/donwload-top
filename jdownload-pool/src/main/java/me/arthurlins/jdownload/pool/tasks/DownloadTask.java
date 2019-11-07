@@ -3,7 +3,7 @@ package me.arthurlins.jdownload.pool.tasks;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.ResponseBody;
-import me.arthurlins.jdownload.pool.HttpThreadPool;
+import me.arthurlins.jdownload.pool.DownloadThreadPool;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,11 +12,11 @@ import java.nio.file.Path;
 
 public class DownloadTask implements Runnable {
 
-    private HttpThreadPool pool;
+    private DownloadThreadPool pool;
     private URI uri;
     private Path path;
 
-    public DownloadTask(HttpThreadPool pool, URI url, Path path){
+    public DownloadTask(DownloadThreadPool pool, URI url, Path path) {
 
         this.pool = pool;
         this.path = path;

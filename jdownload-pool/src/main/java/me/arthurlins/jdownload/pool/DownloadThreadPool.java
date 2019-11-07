@@ -2,6 +2,7 @@ package me.arthurlins.jdownload.pool;
 
 import me.arhturlins.jdonwload.file.FileFacade;
 import me.arthurlins.jdownload.pool.tasks.DownloadTask;
+import me.arthurlins.jdownload.pool.util.QueueWrapper;
 
 import java.io.File;
 import java.net.URI;
@@ -9,20 +10,26 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
-public class HttpThreadPool {
+public class DownloadThreadPool {
 
     private ThreadPoolExecutor executor;
     private FileFacade fileFacade;
     private ConcurrentHashMap<URI, List<Consumer<File>>> observers;
 
-    public HttpThreadPool(){
+    public DownloadThreadPool() {
         this.observers = new ConcurrentHashMap<>();
-        this.executor = new ThreadPoolExecutor(5,10, Long.MAX_VALUE, TimeUnit.DAYS, new LinkedBlockingQueue<>());
+        this.executor = new ThreadPoolExecutor(5, 100, Long.MAX_VALUE, TimeUnit.DAYS, new QueueWrapper());
+        this.executor.setRejectedExecutionHandler((runnable, poolExecutor) -> {
+            try {
+                poolExecutor.getQueue().put(runnable);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
         this.fileFacade = new FileFacade();
     }
 
@@ -43,6 +50,10 @@ public class HttpThreadPool {
             observers.remove(uri);
         }
 
+    }
+
+    public void stop() {
+        executor.shutdown();
     }
 
     public FileFacade getFileFacade() {
