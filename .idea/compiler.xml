@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jdownload-download-pool" />
+        <module name="jdownload-file" />
         <module name="jdownload-core" />
-        <module name="jdownload-cache" />
+        <module name="jdownload-pool" />
+        <module name="jdownload-download-pool" />
       </profile>
     </annotationProcessing>
   </component>

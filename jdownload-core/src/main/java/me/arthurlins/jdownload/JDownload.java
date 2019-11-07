@@ -1,7 +1,7 @@
 package me.arthurlins.jdownload;
 
-import me.arhturlins.jdonwload.cahce.CacheService;
-import me.arthurlins.jdownload.downloadpool.HttpThreadPool;
+
+import me.arthurlins.jdownload.pool.HttpThreadPool;
 
 import java.io.File;
 import java.net.URI;
@@ -33,7 +33,7 @@ public class JDownload {
 
         for (int i =0; i < 10000; i++) {
             try {
-                jd.download("http://212.183.159.230/5MB.zip", "./hello/", (file -> {
+                jd.download("http://212.183.159.230/5MB.zip", "", (file -> {
                     System.out.println("recebido!");
                 }));
             } catch (URISyntaxException e) {
