@@ -4,22 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>jdownload</artifactId>
-        <groupId>me.arthurlins.jdownload</groupId>
+        <groupId>com.jdownload</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>jdownload-core</artifactId>
+
     <dependencies>
         <dependency>
-            <groupId>me.arthurlins.jdownload</groupId>
+            <groupId>com.jdownload</groupId>
             <artifactId>jdownload-pool</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>me.arthurlins.jdownload</groupId>
-            <artifactId>jdownload-cache</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
