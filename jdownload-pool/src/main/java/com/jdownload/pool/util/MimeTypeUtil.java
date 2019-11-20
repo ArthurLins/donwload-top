@@ -27,6 +27,8 @@ public class MimeTypeUtil {
         mimeExt.put("application/json", ".json");
         mimeExt.put("audio/midi", ".midi");
         mimeExt.put("video/mpeg", ".mpeg");
+        mimeExt.put("audio/mpeg", ".mp3");
+        mimeExt.put("video/mp4", ".mp4");
         mimeExt.put("application/vnd.apple.installer+xml", ".mpkg");
         mimeExt.put("application/vnd.oasis.opendocument.presentation", ".odp");
         mimeExt.put("application/vnd.oasis.opendocument.spreadsheet", ".ods");

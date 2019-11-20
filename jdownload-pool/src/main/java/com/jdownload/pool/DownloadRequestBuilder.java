@@ -1,6 +1,5 @@
 package com.jdownload.pool;
 
-import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
@@ -10,7 +9,7 @@ public class DownloadRequestBuilder {
 
     private Path path;
     private URI uri;
-    private Consumer<File> fileConsumer;
+    private Consumer<DownloadedFile> fileConsumer;
 
     public DownloadRequestBuilder url(URI uri) {
         this.uri = uri;
@@ -38,7 +37,7 @@ public class DownloadRequestBuilder {
 
     }
 
-    public DownloadRequestBuilder onFinished(Consumer<File> resultFileConsumer) {
+    public DownloadRequestBuilder onFinished(Consumer<DownloadedFile> resultFileConsumer) {
         this.fileConsumer = resultFileConsumer;
         return this;
     }

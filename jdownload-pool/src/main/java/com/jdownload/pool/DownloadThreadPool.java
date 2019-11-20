@@ -6,7 +6,6 @@ import com.jdownload.pool.util.QueueWrapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
@@ -28,7 +27,6 @@ public class DownloadThreadPool {
         this.executor = new ThreadPoolExecutor(1, simultaneous_downloads, Long.MAX_VALUE, TimeUnit.DAYS, new QueueWrapper());
         this.executor.setRejectedExecutionHandler((runnable, poolExecutor) -> {
             try {
-                //Caso a thread pool rejeite a task, o sistema ira colocar na fila.
                 logger.debug("No threads available, queuing...");
                 poolExecutor.getQueue().put(runnable);
             } catch (InterruptedException e) {
@@ -51,8 +49,11 @@ public class DownloadThreadPool {
         logger.debug("[ID:" + request.id() + "] Download submitted.");
     }
 
-    public void notifyFinished(DownloadRequest request, File resultFile) {
+    public void notifyAll(DownloadRequest request, DownloadedFile resultFile) {
         if (observers.containsKey(request.id())) {
+            if (observers.get(request.id()).size() > 1) {
+                resultFile.setFromMultiRequests(true);
+            }
             observers.get(request.id()).forEach((req) -> req.getFileConsumer().accept(resultFile));
             observers.remove(request.id());
         }
@@ -63,11 +64,11 @@ public class DownloadThreadPool {
     }
 
     public void dispose() {
-        logger.debug("Poll disposed.");
         this.executor.shutdown();
         this.fileFacade = null;
         this.observers.clear();
         this.observers = null;
+        logger.debug("Poll disposed.");
     }
 
 

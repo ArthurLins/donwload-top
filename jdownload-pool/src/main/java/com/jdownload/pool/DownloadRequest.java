@@ -2,7 +2,6 @@ package com.jdownload.pool;
 
 import com.jdownload.pool.util.MD5;
 
-import java.io.File;
 import java.net.URI;
 import java.nio.file.Path;
 import java.util.function.Consumer;
@@ -10,7 +9,7 @@ import java.util.function.Consumer;
 public class DownloadRequest {
     private Path path;
     private URI uri;
-    private Consumer<File> fileConsumer;
+    private Consumer<DownloadedFile> fileConsumer;
 
     public Path getPath() {
         return path;
@@ -28,11 +27,11 @@ public class DownloadRequest {
         this.uri = uri;
     }
 
-    public Consumer<File> getFileConsumer() {
+    public Consumer<DownloadedFile> getFileConsumer() {
         return fileConsumer;
     }
 
-    public void setFileConsumer(Consumer<File> fileConsumer) {
+    public void setFileConsumer(Consumer<DownloadedFile> fileConsumer) {
         this.fileConsumer = fileConsumer;
     }
 

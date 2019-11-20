@@ -3,6 +3,7 @@ package com.jdownload.pool.tasks;
 import com.jdonwload.file.FileFacade;
 import com.jdownload.pool.DownloadRequest;
 import com.jdownload.pool.DownloadThreadPool;
+import com.jdownload.pool.DownloadedFile;
 import com.jdownload.pool.util.MimeTypeUtil;
 import com.squareup.okhttp.Headers;
 import com.squareup.okhttp.OkHttpClient;
@@ -51,7 +52,7 @@ public class DownloadTask implements Runnable {
                 .body();
         this.fileFacade.addToFs(path, resBody.bytes());
         File resultFile = path.toFile();
-        this.fileFacade.addCache(this.request.getPath(), resultFile);
+        this.fileFacade.addCache(this.request.id(), resultFile);
         return resultFile;
     }
 
@@ -62,41 +63,50 @@ public class DownloadTask implements Runnable {
             //Pega os metadados do arquivo
             final Headers fileHeaders = getFileMetadata(client);
             final long fileSize = Long.parseLong(fileHeaders.get("content-length"));
-            final String fileExt = MimeTypeUtil.mimeToExt(fileHeaders.get("content-type"));
 
+            String fileExt;
+            if (FilenameUtils.getExtension(this.request.getUri().getPath()).equals("")) {
+                fileExt = MimeTypeUtil.mimeToExt(fileHeaders.get("content-type"));
+            } else {
+                fileExt = "." + FilenameUtils.getExtension(this.request.getUri().getPath());
+            }
 
             //Gera o nome do arquivo.
             String filename = FilenameUtils.getBaseName(this.request.getUri().getPath());
             filename = filename + fileExt;
             Path path = this.request.getPath().resolve(filename);
 
-            logger.debug("[" + Thread.currentThread().getName() + "] Start downloading from url: "
-                    + this.request.getUri().toString() + " to directory: " + path.toAbsolutePath().toString());
-
             //Verifica se o arquivo existe no cache
-            if (this.fileFacade.existsInCache(this.request.getPath(), fileSize)) {
+            if (this.fileFacade.existsInCache(this.request.id(), fileSize)) {
 
-                logger.debug("[" + Thread.currentThread().getName() + "][CACHE] Finished download from url: "
-                        + this.request.getUri().toString() + " to directory: " + path.toAbsolutePath().toString());
+                logger.debug("Find on Cache file: " + path.toAbsolutePath().toString());
 
-                pool.notifyFinished(this.request, this.fileFacade.getFromCache(this.request.getPath()));
+                DownloadedFile downFile = new DownloadedFile(this.fileFacade.getFromCache(this.request.id()));
+                downFile.setFromCache(true);
+                pool.notifyAll(this.request, downFile);
                 return;
+
                 //Verifica se o arquivo existe no FileSystem
             } else if (this.fileFacade.existsInFS(path, fileSize)) {
-                logger.debug("[" + Thread.currentThread().getName() + "][FS] Finished download from url: "
-                        + this.request.getUri().toString() + " to directory: " + path.toAbsolutePath().toString());
-
+                logger.debug("Find on FileSystem file: " + path.toAbsolutePath().toString());
                 File fsF = this.fileFacade.getFromFS(path);
-                this.fileFacade.addCache(request.getPath(), fsF);
-                pool.notifyFinished(request, fsF);
+                this.fileFacade.addCache(request.id(), fsF);
+                DownloadedFile downFile = new DownloadedFile(fsF);
+                downFile.setFromFileSystem(true);
+                pool.notifyAll(request, downFile);
                 return;
             }
-            //Baixa o arquivo.
-            File resultFile = downloadAndStoreFile(client, path);
-            logger.debug("[" + Thread.currentThread().getName() + "] Finished download from url: "
+            logger.debug("Start download from url: "
                     + this.request.getUri().toString() + " to directory: " + path.toAbsolutePath().toString());
 
-            this.pool.notifyFinished(request, resultFile);
+            //Baixa o arquivo.
+            File resultFile = downloadAndStoreFile(client, path);
+            logger.debug("Finished download from url: "
+                    + this.request.getUri().toString() + " to directory: " + path.toAbsolutePath().toString());
+
+            DownloadedFile downFile = new DownloadedFile(resultFile);
+            downFile.setFromInternet(true);
+            this.pool.notifyAll(request, downFile);
         } catch (IOException e) {
             logger.error(e);
         }

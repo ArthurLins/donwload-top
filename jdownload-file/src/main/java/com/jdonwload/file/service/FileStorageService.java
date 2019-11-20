@@ -5,6 +5,7 @@ import com.jdonwload.file.repository.factory.FileStorageRepositoryFactory;
 import com.jdonwload.file.service.api.IFileStorageService;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Path;
 
 public class FileStorageService implements IFileStorageService {
@@ -16,7 +17,7 @@ public class FileStorageService implements IFileStorageService {
     }
 
     @Override
-    public void addToFs(Path path, byte[] file) {
+    public void addToFs(Path path, byte[] file) throws IOException {
         repository.add(path, file);
     }
 

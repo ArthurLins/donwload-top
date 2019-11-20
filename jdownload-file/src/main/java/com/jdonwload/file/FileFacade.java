@@ -6,6 +6,7 @@ import com.jdonwload.file.service.api.ICacheService;
 import com.jdonwload.file.service.api.IFileStorageService;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Path;
 
 public class FileFacade implements ICacheService, IFileStorageService {
@@ -19,22 +20,22 @@ public class FileFacade implements ICacheService, IFileStorageService {
     }
 
     @Override
-    public void addCache(Path path, File file) {
-        cacheService.addCache(path, file);
+    public void addCache(String id, File file) {
+        cacheService.addCache(id, file);
     }
 
     @Override
-    public File getFromCache(Path path) {
-        return cacheService.getFromCache(path);
+    public File getFromCache(String id) {
+        return cacheService.getFromCache(id);
     }
 
     @Override
-    public boolean existsInCache(Path path, long fileSize) {
-        return cacheService.existsInCache(path, fileSize);
+    public boolean existsInCache(String id, long fileSize) {
+        return cacheService.existsInCache(id, fileSize);
     }
 
     @Override
-    public void addToFs(Path path, byte[] file) {
+    public void addToFs(Path path, byte[] file) throws IOException {
         fileSystemService.addToFs(path,file);
     }
 

@@ -5,7 +5,6 @@ import com.jdonwload.file.repository.factory.CacheRepositoryFactory;
 import com.jdonwload.file.service.api.ICacheService;
 
 import java.io.File;
-import java.nio.file.Path;
 
 public class CacheService implements ICacheService {
 
@@ -15,16 +14,16 @@ public class CacheService implements ICacheService {
         repository = CacheRepositoryFactory.getRepository();
     }
 
-    public void addCache(Path path, File file) {
-        repository.add(path.toString(), file);
+    public void addCache(String id, File file) {
+        repository.add(id, file);
     }
 
-    public File getFromCache(Path path) {
-        return repository.get(path.toString());
+    public File getFromCache(String id) {
+        return repository.get(id);
     }
 
-    public boolean existsInCache(Path path, long fileSize) {
-        final File file = this.getFromCache(path);
+    public boolean existsInCache(String id, long fileSize) {
+        final File file = this.getFromCache(id);
         if (file == null)
             return false;
         return file.length() == fileSize;

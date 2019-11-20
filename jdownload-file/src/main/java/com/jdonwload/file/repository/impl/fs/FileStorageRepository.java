@@ -10,19 +10,15 @@ import java.nio.file.Path;
 public class FileStorageRepository implements IFileStorageRepository {
 
     @Override
-    public void add(Path path, byte[] content) {
-        try {
-            if (!path.toFile().exists()) {
-                path.toFile().createNewFile();
-            }
-            FileOutputStream fos = new FileOutputStream(path.toString());
-            fos.write(content);
-            fos.flush();
-            fos.close();
-        } catch (IOException e) {
-            //Todo::
-            e.printStackTrace();
+    public void add(Path path, byte[] content) throws IOException {
+        if (!path.toFile().exists()) {
+            path.toFile().createNewFile();
         }
+        FileOutputStream fos = new FileOutputStream(path.toString());
+        fos.write(content);
+        fos.flush();
+        fos.close();
+
     }
 
     @Override
