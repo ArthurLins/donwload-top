@@ -1,9 +1,9 @@
 package com.jdownload.pool.tasks;
 
 import com.jdonwload.file.FileFacade;
-import com.jdownload.pool.DownloadRequest;
 import com.jdownload.pool.DownloadThreadPool;
-import com.jdownload.pool.DownloadedFile;
+import com.jdownload.pool.type.DownloadRequest;
+import com.jdownload.pool.type.DownloadedFile;
 import com.jdownload.pool.util.MimeTypeUtil;
 import com.squareup.okhttp.Headers;
 import com.squareup.okhttp.OkHttpClient;

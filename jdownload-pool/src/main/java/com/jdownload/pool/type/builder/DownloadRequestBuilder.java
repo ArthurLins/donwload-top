@@ -1,4 +1,7 @@
-package com.jdownload.pool;
+package com.jdownload.pool.type.builder;
+
+import com.jdownload.pool.type.DownloadRequest;
+import com.jdownload.pool.type.DownloadedFile;
 
 import java.net.URI;
 import java.net.URISyntaxException;

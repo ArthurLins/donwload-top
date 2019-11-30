@@ -1,9 +1,9 @@
 package com.jdownload;
 
 
-import com.jdownload.pool.DownloadRequest;
-import com.jdownload.pool.DownloadRequestBuilder;
 import com.jdownload.pool.DownloadThreadPool;
+import com.jdownload.pool.type.DownloadRequest;
+import com.jdownload.pool.type.builder.DownloadRequestBuilder;
 
 public class JDownload {
 

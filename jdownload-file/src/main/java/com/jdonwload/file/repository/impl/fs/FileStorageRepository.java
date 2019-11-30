@@ -29,8 +29,4 @@ public class FileStorageRepository implements IFileStorageRepository {
         return null;
     }
 
-    @Override
-    public boolean exists(Path path) {
-        return get(path).exists();
-    }
 }

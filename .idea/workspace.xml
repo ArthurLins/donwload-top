@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5f41f38-6c4f-4e40-b4dc-dbe3ef5ed8ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/util/QueueWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdownload-core/src/main/java/me/arthurlins/jdownload/JDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-core/src/main/java/me/arthurlins/jdownload/JDownload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/HttpThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/DownloadThreadPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/tasks/DownloadTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/tasks/DownloadTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-core/src/main/java/com/jdownload/JDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-core/src/main/java/com/jdownload/JDownload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-core/src/test/java/com/jdownload/test/core/CoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-core/src/test/java/com/jdownload/test/core/CoreTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/api/ICacheRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/api/ICacheRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/api/IFileStorageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/api/IFileStorageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/impl/fs/FileStorageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/impl/fs/FileStorageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/impl/runtime/CacheRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/impl/runtime/CacheRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/DownloadRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/type/DownloadRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/DownloadRequestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/type/builder/DownloadRequestBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/DownloadThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/DownloadThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/DownloadedFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/type/DownloadedFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/tasks/DownloadTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/tasks/DownloadTask.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,124 +37,98 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdownload-core/src/main/java/me/arthurlins/jdownload/JDownload.java">
+        <entry file="file://$PROJECT_DIR$/jdownload-core/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#805#806#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="17">
+                <caret line="1" selection-start-line="1" selection-end-line="1" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jdownload-core/src/main/java/me/arthurlins/jdownload/TestClass.java">
+        <entry file="file://$PROJECT_DIR$/jdownload-core/src/test/java/com/jdownload/test/core/CoreTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/FileFacade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+            <state relative-caret-position="204">
+              <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#1085#1086#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1191#1192#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
+                <element signature="e#3672#3673#0" expanded="true" />
+                <element signature="e#3726#3727#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/service/FileStorageService.java">
+        <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/type/builder/DownloadRequestBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/DownloadThreadPool.java">
+        <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/util/MD5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/util/QueueWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="68">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/concurrent/LinkedBlockingQueue.java">
+        <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/DownloadThreadPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3349">
-              <caret line="241" column="11" selection-start-line="241" selection-start-column="11" selection-end-line="241" selection-end-column="11" />
-              <folding>
-                <element signature="e#7227#7228#0" expanded="true" />
-                <element signature="e#7266#7267#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/impl/fs/FileStorageRepository.java">
+        <entry file="file://$PROJECT_DIR$/jdownload-core/src/main/java/com/jdownload/JDownload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/service/api/IFileStorageService.java">
+        <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/util/MimeTypeUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/tasks/DownloadTask.java">
+        <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/util/QueueWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -181,7 +165,6 @@
         <option value="$PROJECT_DIR$/jdownload-download-pool/src/main/java/me/arthurlins/jdownload/downloadpool/tasks/DownloadTask.java" />
         <option value="$PROJECT_DIR$/jdownload-download-pool/src/main/java/me/arthurlins/jdownload/downloadpool/HttpThreadPool.java" />
         <option value="$PROJECT_DIR$/jdownload-download-pool/pom.xml" />
-        <option value="$PROJECT_DIR$/jdownload-core/pom.xml" />
         <option value="$PROJECT_DIR$/jdownload-cache/src/main/java/me/arhturlins/jdonwload/cahce/repository/api/IFileSystem.java" />
         <option value="$PROJECT_DIR$/jdownload-cache/src/main/java/me/arhturlins/jdonwload/cahce/repository/api/IFileSystemRepository.java" />
         <option value="$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/cahce/repository/api/IFileSystemRepository.java" />
@@ -205,6 +188,14 @@
         <option value="$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/util/QueueWapper.java" />
         <option value="$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/util/QueueWrapper.java" />
         <option value="$PROJECT_DIR$/jdownload-core/src/main/java/me/arthurlins/jdownload/TestClass.java" />
+        <option value="$PROJECT_DIR$/jdownload-core/pom.xml" />
+        <option value="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/api/ICacheRepository.java" />
+        <option value="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/api/IFileStorageRepository.java" />
+        <option value="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/impl/fs/FileStorageRepository.java" />
+        <option value="$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/impl/runtime/CacheRepository.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/type/DownloadRequest.java" />
+        <option value="$PROJECT_DIR$/jdownload-core/src/test/java/com/jdownload/test/core/CoreTest.java" />
       </list>
     </option>
   </component>
@@ -240,113 +231,86 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload" type="b2602c69:ProjectViewProjectNode" />
               <item name="jdownload" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-file" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-pool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pool" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pool" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="donwload-top" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donwload-top" type="462c0819:PsiDirectoryNode" />
-              <item name="jdownload-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pool" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdownload" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jdownload" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -378,7 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestClass">
+  <component name="RunManager" selected="JUnit.FileManipulationTest">
     <configuration name="JDownload" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.arthurlins.jdownload.JDownload" />
       <module name="jdownload-core" />
@@ -401,6 +365,52 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdownload-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jdownload.test.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jdownload.test.core" />
+      <option name="MAIN_CLASS_NAME" value="com.jdownload.test.core.CoreTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoreTest.massiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdownload-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jdownload.test.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jdownload.test.core" />
+      <option name="MAIN_CLASS_NAME" value="com.jdownload.test.core.CoreTest" />
+      <option name="METHOD_NAME" value="massiveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileManipulationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdownload-file" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jdonwload.test.file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jdonwload.test.file" />
+      <option name="MAIN_CLASS_NAME" value="com.jdonwload.test.file.FileManipulationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -454,6 +464,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FileManipulationTest" />
+        <item itemvalue="JUnit.CoreTest.massiveTest" />
+        <item itemvalue="JUnit.CoreTest" />
         <item itemvalue="Application.TestClass" />
         <item itemvalue="Application.JDownload" />
       </list>
@@ -472,6 +485,7 @@
       <workItem from="1573050622637" duration="14820000" />
       <workItem from="1573103714530" duration="6446000" />
       <workItem from="1573148070088" duration="2855000" />
+      <workItem from="1575078012613" duration="1405000" />
     </task>
     <task id="LOCAL-00001" summary="Etc etc">
       <created>1573107629128</created>
@@ -490,8 +504,31 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="CoreTest - 2019.11.29 at 22h 48m 55s.xml">
+      <configuration name="CoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoreTest - 2019.11.29 at 22h 56m 21s.xml">
+      <configuration name="CoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileManipulationTest - 2019.11.29 at 22h 56m 39s.xml">
+      <configuration name="FileManipulationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoreTest - 2019.11.29 at 22h 57m 57s.xml">
+      <configuration name="CoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoreTest - 2019.11.29 at 23h 01m 05s.xml">
+      <configuration name="CoreTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoreTest_massiveTest - 2019.11.29 at 23h 01m 39s.xml">
+      <configuration name="CoreTest.massiveTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoreTest_massiveTest - 2019.11.29 at 23h 03m 29s.xml">
+      <configuration name="CoreTest.massiveTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24121000" />
+    <option name="totallyTimeSpent" value="25526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -502,7 +539,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2185501" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.22068231" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -511,7 +548,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.44203684" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
@@ -540,7 +577,6 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/arthurlins/jdownload/JDownload.java" />
     <entry file="file://$PROJECT_DIR$/jdownload-cache/src/main/java/me/arhturlins/jdonwload/cache.java" />
     <entry file="file://$PROJECT_DIR$/jdownload-core/src/main/java/me/arthurlins/jdownload.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/io/FileOutputStream.java">
@@ -573,13 +609,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/api/ICacheRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/api/ICacheRepository.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/concurrent/AbstractExecutorService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
@@ -595,59 +625,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jdownload-download-pool/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/impl/runtime/CacheRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/factory/CacheRepositoryFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/factory/FileStorageRepositoryFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/service/api/ICacheService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/impl/runtime/CacheRepository.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/factory/CacheRepositoryFactory.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/factory/FileStorageRepositoryFactory.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/service/api/ICacheService.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp/okhttp/2.7.5/okhttp-2.7.5.jar!/com/squareup/okhttp/ResponseBody.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -658,20 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-pool/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/lang/ref/Reference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -679,45 +650,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/api/IFileStorageRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/service/CacheService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/FileFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1191#1192#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/api/IFileStorageRepository.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/service/CacheService.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/FileFacade.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/impl/fs/FileStorageRepository.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/service/api/IFileStorageService.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/tasks/DownloadTask.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/service/FileStorageService.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-core/src/main/java/me/arthurlins/jdownload/JDownload.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/util/QueueWrapper.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/DownloadThreadPool.java" />
+    <entry file="file://$PROJECT_DIR$/jdownload-core/src/main/java/me/arthurlins/jdownload/TestClass.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.5/lib/src.zip!/java.base/java/util/concurrent/LinkedBlockingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3349">
+        <state relative-caret-position="739">
           <caret line="241" column="11" selection-start-line="241" selection-start-column="11" selection-end-line="241" selection-end-column="11" />
           <folding>
             <element signature="e#7227#7228#0" expanded="true" />
@@ -726,79 +672,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/repository/impl/fs/FileStorageRepository.java">
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/FileFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-55">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/service/api/IFileStorageService.java">
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/api/ICacheRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/api/IFileStorageRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/tasks/DownloadTask.java">
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/impl/fs/FileStorageRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/me/arhturlins/jdonwload/file/service/FileStorageService.java">
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/repository/impl/runtime/CacheRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-core/src/main/java/me/arthurlins/jdownload/JDownload.java">
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/service/CacheService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/util/QueueWrapper.java">
+    <entry file="file://$PROJECT_DIR$/jdownload-file/src/main/java/com/jdonwload/file/service/FileStorageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-pool/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/type/DownloadedFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/type/DownloadRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/type/builder/DownloadRequestBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/util/MimeTypeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/util/QueueWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/util/MD5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/me/arthurlins/jdownload/pool/DownloadThreadPool.java">
+    <entry file="file://$PROJECT_DIR$/jdownload-pool/src/main/java/com/jdownload/pool/DownloadThreadPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdownload-core/src/main/java/me/arthurlins/jdownload/TestClass.java">
+    <entry file="file://$PROJECT_DIR$/jdownload-core/src/main/java/com/jdownload/JDownload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdownload-core/src/test/java/com/jdownload/test/core/CoreTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding>
+            <element signature="e#3672#3673#0" expanded="true" />
+            <element signature="e#3726#3727#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-package com.jdownload.pool;
+package com.jdownload.pool.type;
 
 import com.jdownload.pool.util.MD5;
 

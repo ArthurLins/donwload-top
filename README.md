@@ -1,11 +1,5 @@
-# donwload-top
+# JDownload
+
+       
 
 
-PP's:
-    Bridge
-    Factory
-    Builder
-    Facade
-    Observer
-    Wrapper
-    

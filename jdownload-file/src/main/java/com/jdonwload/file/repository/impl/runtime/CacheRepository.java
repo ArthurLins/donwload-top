@@ -21,7 +21,4 @@ public class CacheRepository implements ICacheRepository {
         cacheMap.put(key, file);
     }
 
-    public void remove(String key) {
-        cacheMap.get(key);
-    }
 }

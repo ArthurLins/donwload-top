@@ -1,7 +1,7 @@
 package com.jdownload.test.core;
 
 import com.jdownload.JDownload;
-import com.jdownload.pool.DownloadRequestBuilder;
+import com.jdownload.pool.type.builder.DownloadRequestBuilder;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.core.config.Configurator;
@@ -21,6 +21,11 @@ import static org.junit.jupiter.api.Assertions.fail;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class CoreTest {
+
+    /**
+     * Deletar todos os arquivos gerados no final da execução
+     */
+    private final static boolean DELETE_RESULT = false;
 
     private final static Path path = Path.of("target", "test1");
     private final static Path path2 = Path.of("target", "test2");
@@ -71,6 +76,12 @@ class CoreTest {
     @BeforeEach
     void createDirs() {
         try {
+            FileUtils.deleteDirectory(path.toFile());
+            FileUtils.deleteDirectory(path2.toFile());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
             FileUtils.forceMkdir(path.toFile());
             FileUtils.forceMkdir(path2.toFile());
         } catch (IOException e) {
@@ -78,8 +89,11 @@ class CoreTest {
         }
     }
 
-    @AfterEach
+    @AfterAll
     void clearDirs() {
+        if (!DELETE_RESULT) {
+            return;
+        }
         try {
             FileUtils.deleteDirectory(path.toFile());
             FileUtils.deleteDirectory(path2.toFile());

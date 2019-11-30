@@ -2,6 +2,8 @@ package com.jdownload.pool;
 
 import com.jdonwload.file.FileFacade;
 import com.jdownload.pool.tasks.DownloadTask;
+import com.jdownload.pool.type.DownloadRequest;
+import com.jdownload.pool.type.DownloadedFile;
 import com.jdownload.pool.util.QueueWrapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
